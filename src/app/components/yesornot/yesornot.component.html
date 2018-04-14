@@ -1,0 +1,17 @@
+
+
+
+
+
+    <input type="text" placeholder = "Preguntame" [(ngModel)]="question">
+
+    <input class="btn btn-outline-success my-2 my-sm-0" type="button" (click)="searchAnswer()" value="Preguntar">
+
+    <br>
+    <br>
+    <div  *ngIf="res.image != null">
+        <img src="{{res.image}}" class="img-fluid" alt="...">
+    </div>
+
+    <br>
+    <label>{{res.answer}}</label>
